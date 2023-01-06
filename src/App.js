@@ -1,27 +1,47 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { Typography, Grid, Card, CardMedia, Button } from "@mui/material";
-import Profile from "./Profile.png";
+import { Typography, Grid, Box, Stack, Item, Button } from "@mui/material";
+import Projects from "./Components/Projects";
 
 function App() {
   return (
-    <div style={{ textAlign: "center" }} className="text">
-      <Grid
-        container
-        alignItems="center"
-        justifyContent="center"
-        style={{ height: "100vh" }}
-      >
-        <Typography variant="h2">
-          <Grid item xs={12}>
-            <p>Hi, I'm Brian</p>
-          </Grid>
-          <Grid item xs={12}>
-            <p>An Aspiring Product Manager</p>
-          </Grid>
-        </Typography>
-      </Grid>
-    </div>
+    <>
+      <div>
+        <Box
+          sx={{
+            width: "100%",
+            display: "flex",
+            justify: "flex-end",
+          }}
+        >
+          <Stack direction="row" spacing={2}>
+            <Button>My Portfolio</Button>
+            <Button>About Me</Button>
+            <Button href="https://www.linkedin.com/in/brian-miki/">
+              Resume
+            </Button>
+          </Stack>
+        </Box>
+      </div>
+      <div>
+        <Box
+          sx={{
+            width: "100%",
+            height: 300,
+            backgroundColor: "primary.dark",
+            "&:hover": {
+              backgroundColor: "primary.main",
+              opacity: [0.9, 0.8, 0.7],
+              marginTop: "8",
+            },
+          }}
+        />
+      </div>
+      <div>
+        <Grid container direction="column" marginTop={8}>
+          <Projects />
+        </Grid>
+      </div>
+    </>
   );
 }
 
