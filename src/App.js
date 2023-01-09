@@ -12,6 +12,7 @@ import {
 import Projects from "./Components/Projects";
 import Homepage from "./Components/Homepage";
 import Navigation from "./Components/Navigation";
+import AboutMe from "./Components/AboutMe";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Navigation></Navigation>
       <Homepage></Homepage>
       <Projects></Projects>
+      <AboutMe></AboutMe>
     </>
   );
 }

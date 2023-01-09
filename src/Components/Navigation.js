@@ -13,27 +13,53 @@ import {
 function Navigation() {
   return (
     <>
-      <div>
+      <div
+        style={{
+          display: "flex",
+          width: "80%",
+          margin: "0 auto",
+        }}
+      >
+        <Box
+          sx={{
+            width: "80%",
+            margin: "0 auto",
+            marginTop: "10px",
+          }}
+        >
+          <Typography variant="b1" fontSize={18} fontWeight="bold">
+            Brian Miki | Aspiring Product Manager
+          </Typography>
+        </Box>
         <Box
           sx={{
             width: "80%",
             display: "flex",
             justifyContent: "flex-end",
             margin: "0 auto",
+            marginTop: "10px",
           }}
         >
           <Stack direction="row" spacing={10}>
-            <Typography>
-              <Link color="black" underline="none" href="#Projects">
-                About Me
+            <Typography variant="b1" fontSize={18} fontWeight="bold">
+              <Link
+                color="black"
+                underline="none"
+                href="/Components/Projects.js#Projects"
+              >
+                Projects
               </Link>
             </Typography>
-            <Typography>
-              <Link color="black" underline="none" href="#Projects">
-                My Work
+            <Typography variant="b1" fontSize={18} fontWeight="bold">
+              <Link
+                color="black"
+                underline="none"
+                href="/Components/AboutMe.js#AboutMe"
+              >
+                About me
               </Link>
             </Typography>
-            <Typography>
+            <Typography variant="b1" fontSize={18} fontWeight="bold">
               <Link
                 color="black"
                 underline="none"

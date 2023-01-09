@@ -20,14 +20,16 @@ function Homepage() {
           }}
         >
           <Grid>
-            <Grid item xs={8} marginTop={40}>
-              <Typography variant="h1">Hi, I am Brian Miki. </Typography>
-              <Typography variant="b1" style={{ fontSize: 48 }}>
+            <Grid item xs={8} marginTop={30}>
+              <Typography variant="h1" style={{ fontWeight: "bold" }}>
+                Hi, I am Brian Miki.{" "}
+              </Typography>
+              <Typography variant="h1" style={{ fontSize: 48 }}>
                 A product manager who empowers others.
               </Typography>
               <br />
-              <Typography variant="b1" style={{ fontSize: 48 }}>
-                Prev @ Unity
+              <Typography variant="h1" style={{ fontSize: 32 }}>
+                Ex @ Unity
               </Typography>
               <br />
               <a href="https://www.linkedin.com/in/brian-miki/">
@@ -43,24 +45,6 @@ function Homepage() {
           </Grid>
         </Box>
       </div>
-      <Box
-        sx={{
-          width: "80%",
-          margin: "0 auto",
-          display: "flex",
-          alignItems: "center",
-          marginTop: "250px",
-        }}
-      >
-        <div>
-          <Typography variant="b1" style={{ fontSize: 48 }}>
-            Scroll down to see my work!
-            <KeyboardDoubleArrowDown
-              style={{ fontSize: 48 }}
-            ></KeyboardDoubleArrowDown>
-          </Typography>
-        </div>
-      </Box>
     </>
   );
 }
