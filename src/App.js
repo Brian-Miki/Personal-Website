@@ -17,10 +17,12 @@ import AboutMe from "./Components/AboutMe";
 function App() {
   return (
     <>
-      <Navigation></Navigation>
-      <Homepage></Homepage>
-      <Projects></Projects>
-      <AboutMe></AboutMe>
+      <Grid>
+        <Navigation></Navigation>
+        <Homepage></Homepage>
+        <Projects></Projects>
+        <AboutMe></AboutMe>
+      </Grid>
     </>
   );
 }
