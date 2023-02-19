@@ -20,6 +20,9 @@ function AboutMe() {
             width: "80%",
             height: 300,
             margin: "0 auto",
+            "@media (max-width: 600px)": {
+              width: "100%",
+            },
           }}
         >
           <Grid
@@ -27,26 +30,44 @@ function AboutMe() {
             direction="row"
             justifyContent="center"
             marginTop={100}
+            spacing={2}
+            sx={{
+              "@media (max-width: 600px)": {
+                marginTop: 50,
+              },
+            }}
           >
-            <Grid container justify="center" spacing="40">
+            <Grid
+              container
+              justify="center"
+              spacing={2}
+              sx={{ "@media (max-width: 600px)": { flexDirection: "column" } }}
+            >
               <Grid item xs={8.6}>
                 <Typography
                   variant="h1"
-                  style={{ fontWeight: "bold", fontSize: 32 }}
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: 32,
+                    "@media (max-width: 600px)": { fontSize: 24 },
+                  }}
                 >
                   About me{" "}
                 </Typography>
                 <br></br>
-                <Typography variant="b1" style={{ fontSize: 24 }}>
+                <Typography
+                  variant="b1"
+                  style={{
+                    fontSize: 24,
+                    "@media (max-width: 600px)": { fontSize: 16 },
+                  }}
+                >
                   I am currently a 2nd year business and computer science
                   student at Simon Fraser University pursuing a career in
                   product management. I am a retired case competitor at the
                   Beedie School of Business, now I focus on peer mentorship and
                   learning about start ups through our start up accelerator
                   program at SFU.
-                </Typography>
-
-                <Typography variant="b1" style={{ fontSize: 24 }}>
                   <br></br>
                   <br></br>
                   <div id="#AboutMe"></div>
@@ -76,6 +97,10 @@ function AboutMe() {
                     borderRadius: "5%",
                     float: "right",
                     marginBottom: "30px",
+                    width: "100%",
+                    "@media (min-width: 600px)": {
+                      width: "auto",
+                    },
                   }}
                 ></img>
               </Grid>
